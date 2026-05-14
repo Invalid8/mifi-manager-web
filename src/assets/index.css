@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/inter";
-/* ---break---    */
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
@@ -70,106 +68,99 @@
 }
 
 :root {
-  --bg: #ffffff;
-  --bg-2: #fffdf5;
-  --bg-3: #fff9e6;
-  --bg-4: #fff1bf;
+  /* ── Backgrounds ── */
+  --bg: #F5F5F5;
+  --bg-2: #FFFFFF;
+  --bg-3: #EFEFEF;
+  --bg-4: #E5E5E5;
 
-  /* ── Text scale ── */
-  --c1: #252b42;
-  --c2: #0f172a;
-  --c3: #64748b;
-  --c4: #94a3b8;
+  /* ── Text ── */
+  --c1: #111111;
+  --c2: #1A1400;
+  --c3: #666666;
+  --c4: #888888;
 
   /* ── Borders ── */
-  --b1: #ffe68a;
-  --b2: #ffd84d;
-  --b3: #ffcb00;
+  --b1: #E5E5E5;
+  --b2: #CCCCCC;
+  --b3: #AAAAAA;
 
-  /* ── Accent (Yellow Theme) ── */
-  --accent: #ffcb00;
-  --accent-lt: #ffe066;
+  /* ── Brand ── */
+  --accent: #FFCB00;
+  --accent-lt: #FFE066;
   --accent-d: rgba(255, 203, 0, 0.12);
+  --accent-fg: #1A1400;
 
-  /* ── Danger ── */
-  --danger: #da1e28;
-  --danger-d: #fee2e2;
+  /* ── Semantic ── */
+  --success: #22C55E;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+  --info: #0EA5E9;
 
   /* ── Typography ── */
   --font-display: "Cabin", sans-serif;
   --font-body: "Roboto", sans-serif;
 
-  /* ── Spacing ── */
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 40px;
-  --space-xl: 72px;
-  --space-2xl: 120px;
-
   /* ── Radius ── */
-  --r-sm: 4px;
-  --r-md: 8px;
-  --r-lg: 16px;
-  --r-pill: 100px;
-
-  /* ── Transitions ── */
-  --t-fast: 0.15s ease;
-  --t-base: 0.22s ease;
-  --t-slow: 0.35s ease;
-
-  /* ── shadcn/ui Theme ── */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-
-  --card: oklch(0.99 0.02 95);
-  --card-foreground: oklch(0.145 0 0);
-
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-
-  /* Main Yellow */
-  --primary: oklch(0.88 0.18 95);
-  --primary-foreground: oklch(0.15 0 0);
-
-  /* Secondary Yellow Surface */
-  --secondary: oklch(0.96 0.05 95);
-  --secondary-foreground: oklch(0.2 0 0);
-
-  --muted: oklch(0.97 0.03 95);
-  --muted-foreground: oklch(0.45 0 0);
-
-  /* Accent */
-  --accent-foreground: oklch(0.15 0 0);
-
-  --destructive: oklch(0.577 0.245 27.325);
-
-  /* Borders / Inputs */
-  --border: oklch(0.9 0.06 95);
-  --input: oklch(0.92 0.05 95);
-  --ring: oklch(0.88 0.18 95);
-
-  /* Charts */
-  --chart-1: oklch(0.88 0.18 95);
-  --chart-2: oklch(0.78 0.16 90);
-  --chart-3: oklch(0.68 0.14 85);
-  --chart-4: oklch(0.58 0.12 80);
-  --chart-5: oklch(0.48 0.1 75);
-
   --radius: 0.625rem;
 
-  /* Sidebar */
-  --sidebar: oklch(0.985 0.02 95);
-  --sidebar-foreground: oklch(0.145 0 0);
+  /* ── shadcn mappings ── */
+  --background: var(--bg);
+  --foreground: var(--c1);
 
-  --sidebar-primary: oklch(0.88 0.18 95);
-  --sidebar-primary-foreground: oklch(0.15 0 0);
+  --card: var(--bg-2);
+  --card-foreground: var(--c1);
 
-  --sidebar-accent: oklch(0.96 0.05 95);
-  --sidebar-accent-foreground: oklch(0.2 0 0);
+  --popover: var(--bg-2);
+  --popover-foreground: var(--c1);
 
-  --sidebar-border: oklch(0.9 0.06 95);
-  --sidebar-ring: oklch(0.88 0.18 95);
+  --primary: var(--accent);
+  --primary-foreground: var(--accent-fg);
+
+  --secondary: var(--bg-3);
+  --secondary-foreground: var(--c1);
+
+  --muted: var(--bg-3);
+  --muted-foreground: var(--c3);
+
+  --border: var(--b1);
+  --input: var(--b1);
+  --ring: var(--accent);
+
+  --destructive: var(--danger);
+
+  /* ── Charts ── */
+  --chart-1: var(--accent);
+  --chart-2: var(--success);
+  --chart-3: var(--info);
+  --chart-4: var(--warning);
+  --chart-5: var(--danger);
+
+  /* ── Sidebar ── */
+  --sidebar: var(--bg-2);
+  --sidebar-foreground: var(--c1);
+  --sidebar-primary: var(--accent);
+  --sidebar-primary-foreground: var(--accent-fg);
+  --sidebar-accent: var(--bg-3);
+  --sidebar-accent-foreground: var(--c1);
+  --sidebar-border: var(--b1);
+  --sidebar-ring: var(--accent);
+}
+
+.dark {
+  --bg: #0F0F0F;
+  --bg-2: #181818;
+  --bg-3: #222222;
+  --bg-4: #2A2A2A;
+
+  --c1: #F2F2F2;
+  --c2: #FFFFFF;
+  --c3: #888888;
+  --c4: #555555;
+
+  --b1: #2A2A2A;
+  --b2: #3A3A3A;
+  --b3: #4A4A4A;
 }
 
 *,
@@ -185,7 +176,7 @@ html {
 body {
   background: var(--bg);
   color: var(--c1);
-  font-family: var(--roboto);
+  font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.65;
   overflow-x: hidden;
@@ -209,11 +200,9 @@ button {
   background: none;
 }
 
-/* ---break---    */
-
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: 'Inter Variable', sans-serif;
+  --font-display: "Cabin", sans-serif;
+  --font-body: "Roboto", sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -254,51 +243,15 @@ button {
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* ---break---    */
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
-/* ---break---    */
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
