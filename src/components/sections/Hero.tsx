@@ -1,27 +1,29 @@
+import HeroFooter from "../ui/hero/hero-footer";
+
 export default function Hero() {
   return (
     <section
-      className="w-full relative overflow-hidden flex items-center justify-center"
+      className="w-full relative overflow-hidden flex flex-col items-center justify-center"
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
-      <div className="relative w-full h-full max-w-7xl mx-auto px-6 py-16 flex gap-20">
+      <div className="relative w-full h-full max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row gap-20">
         <div className="flex flex-col justify-center flex-1 max-w-xl">
           <h1
-            className="font-display leading-none tracking-tight"
+            className="font-display tracking-tight leading-none"
             style={{ color: "var(--c1)" }}
           >
             <span
-              className="block font-bold"
+              className="block font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-lt)] to-[var(--accent-fg)]"
               style={{ fontSize: "clamp(52px, 6vw, 78px)" }}
             >
-              Wifi Manager
+              Mifi Manager
             </span>
 
             <span
               className="block font-normal whitespace-nowrap"
               style={{ fontSize: "clamp(42px, 5vw, 62px)" }}
             >
-              Smart Management
+              Smart MiFi Control
             </span>
 
             <span
@@ -40,6 +42,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      <HeroFooter />
     </section>
   );
 }
