@@ -1,12 +1,12 @@
-import HeroFooter from "../ui/hero/hero-footer";
+import HeroFooter from "../ui/hero/HeroFooter";
 
 export default function Hero() {
   return (
     <section
-      className="w-full relative overflow-hidden flex flex-col items-center justify-center"
-      style={{ minHeight: "calc(100vh - 96px)" }}
+      className="w-full relative overflow-hidden flex flex-col"
+      style={{ minHeight: "calc(100vh - 98px)" }}
     >
-      <div className="relative w-full h-full max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row gap-20">
+      <div className="relative w-full max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row gap-20 flex-1">
         <div className="flex flex-col justify-center flex-1 max-w-xl">
           <h1
             className="font-display tracking-tight leading-none"
@@ -42,7 +42,9 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <HeroFooter />
+      <div className="mt-auto w-full flex justify-center items-end">
+        <HeroFooter />
+      </div>
     </section>
   );
 }

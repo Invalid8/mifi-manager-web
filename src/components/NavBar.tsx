@@ -15,7 +15,7 @@ function Navbar() {
         <span className="hidden md:block md:text-3xl lg:text-4xl font-bold">
           Mifi Manager
         </span>
-        <Button className="px-7! py-5! rounded-sm bg-primary! text-white uppercase tracking-wide">
+        <Button className="px-7! py-5! rounded-full bg-primary! text-white uppercase tracking-wide">
           Download App
         </Button>
       </nav>
