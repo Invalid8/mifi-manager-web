@@ -183,7 +183,7 @@ body {
   color: var(--c1);
   font-family: var(--font-body);
   font-size: 15px;
-  line-height: 1.65;
+  /* line-height: 1.65; */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

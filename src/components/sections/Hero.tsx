@@ -4,7 +4,7 @@ import heroImage from "@/assets/img/stats-screen.png";
 export default function Hero() {
   return (
     <section
-      className="w-full relative overflow-hidden flex flex-col"
+      className="w-full relative overflow-hidden flex flex-col min-h-screen mt-5"
       style={{ minHeight: "calc(100vh - 98px)" }}
     >
       <div className="w-full h-full max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-10 lg:gap-20 flex-1">

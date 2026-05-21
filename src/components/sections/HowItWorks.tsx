@@ -2,7 +2,6 @@ import SettingScreen from "@/assets/img/settings-screen.png";
 import StatsSceen from "@/assets/img/stats-screen.png";
 import HubScreen from "@/assets/img/stats-screen.png";
 
-
 export default function HowItWorks() {
   const steps = [
     {
@@ -35,9 +34,10 @@ export default function HowItWorks() {
         {/* Section header */}
         <div className="flex flex-col gap-4 mb-16">
           <p
-            className="font-body font-semibold text-sm uppercase tracking-widest"
+            className="font-body font-semibold text-lg uppercase tracking-widest flex items-center gap-2"
             style={{ color: "var(--accent)" }}
           >
+            <div className="bg-accent! w-4 h-0.5" />
             How it works
           </p>
           <h2

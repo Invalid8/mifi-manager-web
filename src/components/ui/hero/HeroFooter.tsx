@@ -5,10 +5,9 @@ import SmsIcon from "../../svg/smsicon";
 
 export default function HeroFooter() {
   return (
-    <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 md:mt-0">
+    <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:mt-0">
       <div
-        className="flex items-center justify-center px-8 lg:rounded-tr-2xl"
-        style={{ background: "var(--bg-3)" }}
+        className="flex items-center justify-center px-8 lg:rounded-tr-2xl my-7"
       >
         <Button className="px-9! py-7! rounded-full bg-primary! text-white uppercase tracking-widest font-bold text-sm w-full lg:w-auto">
           Download App
@@ -16,7 +15,6 @@ export default function HeroFooter() {
       </div>
       <div
         className="flex items-start sm:items-center gap-4 px-6 py-6 sm:py-8border-t lg:border-t-0 lg:border-l lg:rounded-t-2xl"
-        style={{ background: "var(--bg-3)", borderColor: "var(--b1)" }}
       >
         <div
           className="flex items-center justify-center rounded-lg shrink-0"
@@ -43,7 +41,6 @@ export default function HeroFooter() {
       </div>
       <div
         className="flex items-start sm:items-center gap-4 px-6 py-6 sm:py-8border-t lg:border-t-0 lg:border-l lg:rounded-t-2xl"
-        style={{ background: "var(--bg-3)", borderColor: "var(--b1)" }}
       >
         <div
           className="flex items-center justify-center rounded-lg shrink-0"
@@ -70,7 +67,6 @@ export default function HeroFooter() {
       </div>
       <div
         className="flex items-start sm:items-center gap-4 px-6 py-6 sm:py-8border-t lg:border-t-0 lg:border-l lg:rounded-tl-2xl"
-        style={{ background: "var(--bg-3)", borderColor: "var(--b1)" }}
       >
         <div
           className="flex items-center justify-center rounded-lg shrink-0"
