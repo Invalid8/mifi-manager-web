@@ -189,7 +189,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* subtle premium texture */
 body::before {
   content: "";
   position: fixed;

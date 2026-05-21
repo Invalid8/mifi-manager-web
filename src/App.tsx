@@ -1,9 +1,10 @@
 import Navbar from "@/components/NavBar";
 import Hero from "@/components/sections/Hero";
+import HowItWorks from "./components/sections/HowItWorks";
 
 export default function App() {
   return (
-    <main className="relative">
+    <main className="relative min-h-screen">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -15,6 +16,7 @@ export default function App() {
       <Navbar />
       <div className="relative mx-auto">
         <Hero />
+        <HowItWorks />
       </div>
     </main>
   );
